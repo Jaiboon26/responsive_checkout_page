@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,1,-50..200" />
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <h1>Checkout</h1>
+  </header>
+  <main id="main">
+    <form action="#" id="myForm">
+      <div class="left">
+        <div class="contact">
+          <h3>Contact information</h3>
+          <div class="input-form">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email" autocomplete="off" required><span
+              class="material-symbols-outlined material-icons md-dark">
+              mail
+            </span>
+          </div>
+          <div class="input-form">
+            <label>Phone</label>
+            <input type="number" name="phone" placeholder="Phone number" autocomplete="off" required><span
+              class="material-symbols-outlined material-icons md-dark">
+              phone
+            </span>
+          </div>
+        </div>
+        <div class="address">
+          <h3>Shipping address</h3>
+          <div class="input-form">
+            <label>Full name</label>
+            <input type="text" name="fname" placeholder="Your name...." autocomplete="off" required><span
+              class="material-symbols-outlined material-icons">
+              account_circle
+            </span>
+          </div>
+          <div class="input-form">
+            <label>Address</label>
+            <input type="text" name="address" placeholder="Your address...." autocomplete="off" required><span
+              class="material-symbols-outlined material-icons">
+              home
+            </span>
+          </div>
+          <div class="input-form">
+            <label>City</label>
+            <input type="text" name="city" placeholder="Your City...." autocomplete="off" required><span
+              class="material-symbols-outlined material-icons">
+              apartment
+            </span>
+          </div>
+          <div class="input-grid">
+            <div class="left">
+              <div class="input-form">
+                <label>Country</label>
+                <select name="country">
+                  <option value="#">English</option>
+                  <option value="#">United States of America</option>
+                  <option value="#">United Kingdom</option>
+                  <option value="#">France</option>
+                  <option value="#">Canada</option>
+                  <option value="#">Belgium</option>
+                  <option value="#">Australia</option>
+                  <option value="#">China</option>
+                </select>
+                <span class="material-symbols-outlined material-icons">
+                  public
+                </span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="input-form">
+                <label>Postal code</label>
+                <input type="number" name="pcode" placeholder="Code..." autocomplete="off" required><span
+                  class="material-symbols-outlined material-icons">
+                  markunread_mailbox
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox">
+            <p>Save this information for next time</p>
+          </div>
+          <div class="submit-btn">
+            <div class="right">
+              <button type="submit" class="submit">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="right">
+      <div class="order-container">
+        <div class="order">
+          <img src="/photo1.png">
+          <div>
+            <p>Vintage Backbag</p>
+            <div class="price-container">
+              <p class="price" id="price1">$54.99</p>
+              <p class="discount">$94.99</p>
+            </div>
+            <div class="qty-container">
+              <button id="minus_qty1" onclick="minus()">-</button>
+              <p id="qty1">1</p>
+              <button id="plus_qty1" onclick="plus()">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="order">
+          <img src="/photo2.png">
+          <div>
+            <p>Vintage Backbag</p>
+            <div class="price-container">
+              <p class="price" id="price2">$74.99</p>
+              <p class="discount">$124.99</p>
+            </div>
+            <div class="qty-container">
+              <button id="minus_qty2" onclick="minus2()">-</button>
+              <p id="qty2">1</p>
+              <button id="plus_qty2" onclick="plus2()">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="summerize">
+          <div class="shipping">
+            <p>Shipping</p>
+            <p id="shipping">19$</p>
+          </div>
+          <div class="total">
+            <p>Total</p>
+            <p id="total">0$</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal" style="display: none;">
+      <p>Your submit success</p>
+      <p>reload...</p>
+    </div>
+  </main>
+  <footer>
+    <div id="reload" style="display: none;"></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
