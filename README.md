@@ -34,8 +34,10 @@
 ## Overview
 
 This is checkout page with responsive design
--Can input number of order
--when submit show alert success
+<ul>
+   <li>Can input number of order</li>
+   <li>when submit show alert success</li>
+</ul>
 
 ![preview_desktop](https://github.com/Jaiboon26/responsive_checkout_page/assets/133299258/f2752300-5df6-46cb-9cfa-c90f9dd55c3e)
 ![preview_mobile](https://github.com/Jaiboon26/responsive_checkout_page/assets/133299258/72b5b346-433f-412f-8ddb-8e3383be3575)
